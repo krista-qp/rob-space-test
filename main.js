@@ -62,7 +62,9 @@ for (const h of HUMANS) {
   img.src = h.photo;
   img.alt = h.alt;
   img.loading = "lazy";
-  card.append(img, el("h3", null, h.name), el("p", "role", h.role), chatsWith(h.buddy), el("p", "bio", h.bio));
+  const portrait = el("span", "portrait");
+  portrait.append(img);
+  card.append(portrait, el("h3", null, h.name), el("p", "role", h.role), chatsWith(h.buddy), el("p", "bio", h.bio));
   $("human-grid").append(card);
 }
 {
