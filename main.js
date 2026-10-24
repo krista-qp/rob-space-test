@@ -10,11 +10,11 @@ const el = (tag, cls, text) => {
 const $ = (id) => document.getElementById(id);
 
 // Hero
-$("city").textContent = LAB.city;
-$("coords").textContent = LAB.coords;
-$("footer-city").textContent = LAB.city;
-$("contact-btn").href = LAB.contactUrl;
-$("days").textContent = Math.floor((Date.now() - new Date(LAB.lastHumanVisit)) / 86400000).toLocaleString("en");
+$("city").textContent = PLACE.city;
+$("coords").textContent = PLACE.coords;
+$("footer-city").textContent = PLACE.city;
+$("contact-btn").href = PLACE.contactUrl;
+$("days").textContent = Math.floor((Date.now() - new Date(PLACE.lastHumanVisit)) / 86400000).toLocaleString("en");
 $("crew-count").textContent = CREW.length;
 $("inc-count").textContent = INCIDENTS.length;
 
@@ -67,7 +67,7 @@ for (const h of HUMANS) {
 }
 {
   const card = el("a", "human open-seat");
-  card.href = LAB.contactUrl;
+  card.href = PLACE.contactUrl;
   card.style.setProperty("--accent", colorOf(OPEN_SEAT.buddy));
   const frame = el("div", "seat-frame");
   frame.style.backgroundImage = `url(${OPEN_SEAT.photo})`;

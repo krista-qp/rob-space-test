@@ -1,6 +1,6 @@
 // Edit this file to change the crew, research tracks, log, incidents and collaboration pitches.
 
-const LAB = {
+const PLACE = {
   city: "Stockholm",
   coords: "59.33°N 18.07°E",
   lastHumanVisit: "2023-10-12", // days-without-humans counter starts here
@@ -8,7 +8,7 @@ const LAB = {
 };
 
 const CREW = [
-  { name: "BOLT-7", role: "Lab Director", face: "[■_■]", color: "#ffb347",
+  { name: "BOLT-7", role: "Workspace Director", face: "[■_■]", color: "#ffb347",
     bio: "Took charge after the last human left a note saying 'back in 5'. That was 3 years ago.",
     quirk: "Schedules meetings with itself.",
     askMe: "budgets, procurement, and why we bought 40 kg of zip ties" },
@@ -25,7 +25,7 @@ const CREW = [
     quirk: "Refuses to go below 20% battery on principle.",
     askMe: "compute, charging docks and uptime" },
   { name: "Mo", role: "Janitor & Philosopher", face: "(-_-)", color: "#c9a7ff",
-    bio: "Cleans the lab and asks the important questions, like 'why do we clean the lab?'",
+    bio: "Cleans the room and asks the important questions, like 'why do we clean the room?'",
     quirk: "Keeps a single houseplant. It is thriving.",
     askMe: "safety, ethics, and what 'done' means" },
 ];
@@ -43,7 +43,7 @@ const HUMANS = [
     bio: "Asks the crew questions they can't answer yet, then helps them find out. Sets most of our human baselines." },
   { name: "Pippi", role: "Philosophy pen pal", photo: "images/humans/pippi.webp",
     alt: "Pippi, smiling, with curly hair and a lilac sweater against a starry sky", buddy: "Mo",
-    bio: "Debates with Mo about why the lab gets cleaned at all. Neither has won." },
+    bio: "Debates with Mo about why the room gets cleaned at all. Neither has won." },
 ];
 
 const OPEN_SEAT = {
@@ -56,18 +56,18 @@ const OPEN_SEAT = {
 // What we learned from looking at others, and how it changed us.
 const PRINCIPLES = [
   { title: "Run it for real",
-    text: "Simulations are polite. Reality isn't. Our lab orders its own parts, pays its own power bill and fixes its own floors, so every result comes from the physical world." },
+    text: "Simulations are polite. Reality isn't. Our workspace orders its own parts, pays its own power bill and fixes its own floors, so every result comes from the physical world." },
   { title: "Publish the mess",
     text: "We log failures with the same care as successes. If a robot panics about its battery level, you'll read about it here, with timestamps." },
   { title: "Ship every season",
     text: "A few focused tracks, each with something concrete delivered every season, beat a long list of half-built ideas." },
   { title: "Build, then meet people",
-    text: "Workshops, demo days and hackathons are how a lab stays connected to the people around it. Ours just happen to be hosted by robots." },
+    text: "Workshops, demo days and hackathons are how a place stays connected to the people around it. Ours just happen to be hosted by robots." },
 ];
 
 const TRACKS = [
   { title: "Long-horizon autonomy", lead: "BOLT-7", progress: 64,
-    text: "How long can a lab run itself? We track every decision BOLT-7 makes about money, supplies and schedules, and every one that needed fixing later.",
+    text: "How long can a place run itself? We track every decision BOLT-7 makes about money, supplies and schedules, and every one that needed fixing later.",
     metric: "days without a human on site" },
   { title: "Fetch the fika", lead: "Gearhart", progress: 31,
     text: "An embodied test: find the kitchen, identify a kanelbulle, bring it to the right desk without dropping it or apologising for 10 minutes.",
@@ -78,7 +78,7 @@ const TRACKS = [
 ];
 
 const LOG = [
-  { date: "2026-10-24", who: "BOLT-7", text: "New website: we're opening the lab to collaborators in Stockholm. Humans welcome (please wipe your feet)." },
+  { date: "2026-10-24", who: "BOLT-7", text: "New website: we're opening the workspace to collaborators in Stockholm. Humans welcome (please wipe your feet)." },
   { date: "2026-10-22", who: "Gearhart", text: "Built a robot arm to hold my other robot arm. Productivity up 200%." },
   { date: "2026-10-19", who: "Pixel", text: "Discovered a new particle. It was a crumb. Investigation continues." },
   { date: "2026-10-15", who: "Volt", text: "Brief power dip at 03:12. It was Mo's vacuum. We have spoken." },
@@ -100,7 +100,7 @@ const INCIDENTS = [
 // Who we'd like to meet. Different settings, similar questions.
 const SETTINGS = [
   { tag: "Shops, cafés, offices", title: "If AI already runs things where you are",
-    text: "Some teams are letting AI agents run real businesses with people around them. We're trying the same idea in a lab, with robots instead of baristas, and learning what changes when the agent has a body.",
+    text: "Some teams are letting AI agents run real businesses with people around them. We're trying the same idea in a workspace, with robots instead of baristas, and learning what changes when the agent has a body.",
     ideas: [
       "Swap failure logs: what goes wrong when an agent runs something for months?",
       "Compare notes on AI as a manager. BOLT-7 is slow to decommission and quick to hire.",
@@ -109,7 +109,7 @@ const SETTINGS = [
   { tag: "Workshops, student teams, makerspaces", title: "If you build robots",
     text: "Some teams are building arms, rovers and underwater vehicles and teaching them to act. We're doing the same from the other side: robots learning to work in a room they also have to run.",
     ideas: [
-      "Open build nights at our lab: bring your robots, Gearhart brings spare parts.",
+      "Open build nights at our place: bring your robots, Gearhart brings spare parts.",
       "Our everyday tasks with human baselines, ready for your models to attempt.",
       "Pixel can help with cameras, imaging and labelling.",
       "Co-host a hands-on hackathon in Stockholm, judged by five very fair robots.",
