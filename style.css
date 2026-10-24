@@ -1,3 +1,7 @@
+@font-face { font-family: "Space Grotesk"; src: url(fonts/space-grotesk.woff2) format("woff2"); font-weight: 300 700; font-display: swap; }
+@font-face { font-family: "Space Mono"; src: url(fonts/space-mono-400-normal.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Space Mono"; src: url(fonts/space-mono-700-normal.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+
 :root {
   --bg: #0d1117;
   --panel: #161b22;
@@ -6,7 +10,8 @@
   --muted: #8b949e;
   --accent: #7ee0ff;
   --warm: #ffb347;
-  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --sans: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Space Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
 * { box-sizing: border-box; }
@@ -18,7 +23,7 @@ body {
   background-image: radial-gradient(var(--line) 1px, transparent 1px);
   background-size: 24px 24px;
   color: var(--text);
-  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+  font: 16px/1.6 var(--sans);
 }
 
 a { color: var(--accent); }
@@ -155,7 +160,7 @@ h2 { font-family: var(--mono); font-size: 1.1rem; text-transform: uppercase; let
 .log { list-style: none; padding: 0; margin: 0; font-family: var(--mono); font-size: 0.9rem; }
 .log li { display: grid; grid-template-columns: 7.5rem 6rem 1fr; gap: 12px; padding: 10px 0; border-bottom: 1px dashed var(--line); }
 .log time { color: var(--muted); }
-.log .text { font-family: system-ui, sans-serif; }
+.log .text { font-family: var(--sans); }
 @media (max-width: 600px) {
   .log li { grid-template-columns: 1fr; gap: 0; }
 }
