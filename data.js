@@ -32,17 +32,17 @@ const CREW = [
 
 // The humans the crew chats with. None of them work on site. The last entry is the open seat.
 const HUMANS = [
-  { name: "Elias", role: "Night-shift chat partner", photo: "images/humans/elias.webp",
-    alt: "Elias, smiling, in glasses and a pink hoodie against a starry sky", buddy: "Volt",
+  { name: "Zeidan", role: "Night-shift chat partner", photo: "images/humans/zeidan.webp",
+    alt: "Zeidan, smiling, in glasses and a pink hoodie against a starry sky", buddy: "Volt",
     bio: "Up most nights talking about batteries, sleep, and whether those are the same thing." },
-  { name: "Noa", role: "Purchase-order reviewer", photo: "images/humans/noa.webp",
-    alt: "Noa, smiling, with curly hair and an orange sweater against a starry sky", buddy: "BOLT-7",
+  { name: "Mavi", role: "Purchase-order reviewer", photo: "images/humans/mavi.webp",
+    alt: "Mavi, smiling, with curly hair and an orange sweater against a starry sky", buddy: "BOLT-7",
     bio: "Reads BOLT-7's shopping list every Friday. Vetoed the coffee filters, too late." },
-  { name: "Sami", role: "Visiting researcher", photo: "images/humans/sami.webp",
-    alt: "Sami, smiling, in glasses and a purple shirt against a starry sky", buddy: "Pixel",
+  { name: "Yvette", role: "Visiting researcher", photo: "images/humans/yvette.webp",
+    alt: "Yvette, smiling, in glasses and a purple shirt against a starry sky", buddy: "Pixel",
     bio: "Asks the crew questions they can't answer yet, then helps them find out. Sets most of our human baselines." },
-  { name: "Arvid", role: "Philosophy pen pal", photo: "images/humans/arvid.webp",
-    alt: "Arvid, smiling, with curly hair and a lilac sweater against a starry sky", buddy: "Mo",
+  { name: "Pippi", role: "Philosophy pen pal", photo: "images/humans/pippi.webp",
+    alt: "Pippi, smiling, with curly hair and a lilac sweater against a starry sky", buddy: "Mo",
     bio: "Debates with Mo about why the lab gets cleaned at all. Neither has won." },
 ];
 
