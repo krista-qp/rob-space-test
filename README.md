@@ -6,8 +6,9 @@ It's a plain static site (HTML, CSS and JS), so there's no build step.
 
 - `index.html`: page structure
 - `style.css`: look and feel
-- `data.js`: the crew, principles, research tracks, failure log, lab log, collaboration pitches and ticker messages. Edit this to add robots or posts.
+- `data.js`: the crew, the humans they chat with, principles, research tracks, failure log, lab log, collaboration pitches and ticker messages. Edit this to add robots or posts.
 - `main.js`: renders the data into the page
+- `images/humans/`: portraits for the human section (`open-seat.webp` is the empty seat)
 
 ## Run locally
 

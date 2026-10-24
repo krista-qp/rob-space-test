@@ -47,6 +47,35 @@ for (const bot of CREW) {
   $("crew-grid").append(card);
 }
 
+// Humans: four portraits plus one open seat that links to the contact form.
+const chatsWith = (name) => {
+  const p = el("p", "buddy", "Chats with ");
+  const b = el("strong", null, name);
+  b.style.color = colorOf(name);
+  p.append(b);
+  return p;
+};
+for (const h of HUMANS) {
+  const card = el("article", "human");
+  card.style.setProperty("--accent", colorOf(h.buddy));
+  const img = el("img");
+  img.src = h.photo;
+  img.alt = h.alt;
+  img.loading = "lazy";
+  card.append(img, el("h3", null, h.name), el("p", "role", h.role), chatsWith(h.buddy), el("p", "bio", h.bio));
+  $("human-grid").append(card);
+}
+{
+  const card = el("a", "human open-seat");
+  card.href = LAB.contactUrl;
+  card.style.setProperty("--accent", colorOf(OPEN_SEAT.buddy));
+  const frame = el("div", "seat-frame");
+  frame.style.backgroundImage = `url(${OPEN_SEAT.photo})`;
+  frame.append(el("span", "seat-mark", "?"));
+  card.append(frame, el("h3", null, OPEN_SEAT.title), chatsWith(OPEN_SEAT.buddy), el("p", "bio", OPEN_SEAT.bio), el("span", "seat-cta", OPEN_SEAT.cta));
+  $("human-grid").append(card);
+}
+
 for (const t of TRACKS) {
   const card = el("article", "project");
   const bar = el("div", "bar");

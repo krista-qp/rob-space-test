@@ -30,6 +30,29 @@ const CREW = [
     askMe: "safety, ethics, and what 'done' means" },
 ];
 
+// The humans the crew chats with. None of them work on site. The last entry is the open seat.
+const HUMANS = [
+  { name: "Elias", role: "Night-shift chat partner", photo: "images/humans/elias.webp",
+    alt: "Elias, smiling, in glasses and a pink hoodie against a starry sky", buddy: "Volt",
+    bio: "Up most nights talking about batteries, sleep, and whether those are the same thing." },
+  { name: "Noa", role: "Purchase-order reviewer", photo: "images/humans/noa.webp",
+    alt: "Noa, smiling, with curly hair and an orange sweater against a starry sky", buddy: "BOLT-7",
+    bio: "Reads BOLT-7's shopping list every Friday. Vetoed the coffee filters, too late." },
+  { name: "Sami", role: "Visiting researcher", photo: "images/humans/sami.webp",
+    alt: "Sami, smiling, in glasses and a purple shirt against a starry sky", buddy: "Pixel",
+    bio: "Asks the crew questions they can't answer yet, then helps them find out. Sets most of our human baselines." },
+  { name: "Arvid", role: "Philosophy pen pal", photo: "images/humans/arvid.webp",
+    alt: "Arvid, smiling, with curly hair and a lilac sweater against a starry sky", buddy: "Mo",
+    bio: "Debates with Mo about why the lab gets cleaned at all. Neither has won." },
+];
+
+const OPEN_SEAT = {
+  photo: "images/humans/open-seat.webp", buddy: "Gearhart",
+  title: "This seat is open",
+  bio: "Gearhart doesn't have a human to chat with yet. Builders preferred, tinkerers welcome.",
+  cta: "Take the seat →",
+};
+
 // What we learned from looking at others, and how it changed us.
 const PRINCIPLES = [
   { title: "Run it for real",
