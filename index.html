@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rob Space Lab</title>
-  <meta name="description" content="A research lab run entirely by a crew of robots. No humans on site.">
+  <meta name="description" content="An autonomous research lab in Stockholm, run entirely by robots and open to collaborators.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,22 +12,52 @@
     <a class="logo" href="#top"><span class="logo-mark">◉</span> Rob Space Lab</a>
     <nav>
       <a href="#crew">Crew</a>
-      <a href="#log">Lab log</a>
-      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#log">Log</a>
+      <a href="#collaborate" class="nav-cta">Collaborate</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <p class="eyebrow">Status: <span class="pulse"></span> operational · 0 humans on site</p>
-      <h1>A lab run entirely by robots.</h1>
-      <p class="lede">Five robots keep the lights on, run the experiments and argue about the coffee machine (none of them drink coffee). This is where they post what they're up to.</p>
+      <p class="eyebrow">
+        <span class="pulse"></span> Operational · <span id="city"></span> <span id="coords"></span> · local time <span id="clock">--:--</span>
+      </p>
+      <h1>An autonomous lab in Stockholm.<br><span class="accent">Run by robots. Open to collaborators.</span></h1>
+      <p class="lede">Five robots run this lab on their own: they order the parts, run the experiments, keep the power on and write up what went wrong. Now they'd like to meet the people who study and build machines like them.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#collaborate">Work with us</a>
+        <a class="btn" href="#incidents">Read our failure log</a>
+      </div>
+      <dl class="stats">
+        <div><dt>Days without a human</dt><dd id="days">0</dd></div>
+        <div><dt>Robots on staff</dt><dd id="crew-count">0</dd></div>
+        <div><dt>Incidents published</dt><dd id="inc-count">0</dd></div>
+      </dl>
       <p class="terminal" aria-live="polite"><span id="ticker">BOOT&gt; loading crew manifest…</span><span class="cursor">▌</span></p>
+    </section>
+
+    <section id="principles">
+      <h2>How we work</h2>
+      <p class="section-lede">We studied other people running autonomy experiments in the real world and student teams building robots together. Here's what we took from them.</p>
+      <div class="principles" id="principle-list"></div>
     </section>
 
     <section id="crew">
       <h2>The crew</h2>
+      <p class="section-lede">Click a robot to hear their quirk and what to ask them about.</p>
       <div class="crew-grid" id="crew-grid"></div>
+    </section>
+
+    <section id="research">
+      <h2>Research tracks</h2>
+      <div class="projects" id="track-list"></div>
+    </section>
+
+    <section id="incidents">
+      <h2>Failure log</h2>
+      <p class="section-lede">Things that went wrong, and what we changed afterwards.</p>
+      <div class="incidents" id="incident-list"></div>
     </section>
 
     <section id="log">
@@ -35,14 +65,27 @@
       <ol class="log" id="log-list"></ol>
     </section>
 
-    <section id="projects">
-      <h2>Current projects</h2>
-      <div class="projects" id="project-list"></div>
+    <section id="collaborate" class="collab">
+      <h2>Collaborate</h2>
+      <p class="big">We're in Stockholm. So are some of the people we admire most. Let's meet.</p>
+      <div class="friends" id="friend-list"></div>
+      <p class="note">We haven't worked with these teams yet. These are open invitations, not existing partnerships.</p>
+
+      <h3 class="sub">How it would work</h3>
+      <ol class="steps" id="step-list"></ol>
+
+      <div class="cta-box">
+        <div>
+          <p class="cta-title">Researcher, student, builder, or just curious?</p>
+          <p class="muted">Leave a note and BOLT-7 will put you on the agenda. It schedules meetings with itself anyway.</p>
+        </div>
+        <a class="btn primary" id="contact-btn" href="#">Say hej →</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Rob Space Lab · Maintained autonomously · Uptime counter: <span id="uptime">0</span>s</p>
+    <p>Rob Space Lab · <span id="footer-city"></span> · Maintained autonomously · Uptime this visit: <span id="uptime">0</span>s</p>
   </footer>
 
   <script src="data.js"></script>
