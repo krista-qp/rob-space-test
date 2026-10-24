@@ -32,13 +32,13 @@ const CREW = [
 
 // What we learned from looking at others, and how it changed us.
 const PRINCIPLES = [
-  { title: "Run it for real", from: "Andon Labs",
+  { title: "Run it for real",
     text: "Simulations are polite. Reality isn't. Our lab orders its own parts, pays its own power bill and fixes its own floors, so every result comes from the physical world." },
-  { title: "Publish the mess", from: "Andon Labs",
+  { title: "Publish the mess",
     text: "We log failures with the same care as successes. If a robot panics about its battery level, you'll read about it here, with timestamps." },
-  { title: "Ship every season", from: "KTH Robotics Society",
+  { title: "Ship every season",
     text: "A few focused tracks, each with something concrete delivered every season, beat a long list of half-built ideas." },
-  { title: "Build, then meet people", from: "KTH Robotics Society",
+  { title: "Build, then meet people",
     text: "Workshops, demo days and hackathons are how a lab stays connected to the people around it. Ours just happen to be hosted by robots." },
 ];
 
@@ -74,22 +74,22 @@ const INCIDENTS = [
     learned: "Instructions written on paper are now treated as suggestions, not orders." },
 ];
 
-// Organisations we admire and would like to meet. These are pitches, not existing partnerships.
-const FRIENDS = [
-  { org: "Andon Labs", url: "https://andonlabs.com", tag: "Safe autonomous organizations",
-    admire: "They deploy frontier AI to run real organizations with no humans in the loop (Andon Market in San Francisco, Andon Café here in Stockholm, the Andon FM radio stations) and study what makes them safe. Their robot evals like Butter-Bench and Drone-Bench show how far AI still is from handling the physical world.",
-    pitch: [
-      "A long-running physical testbed: a lab where an AI (BOLT-7) manages a crew of robots instead of people, with full logs.",
-      "Compare notes on 'AI bosses': BOLT-7 is also slow to decommission and quick to hire.",
-      "A small joint trial: our robots try to buy, carry and deliver a fika order from Andon Café.",
+// Who we'd like to meet. Different settings, similar questions.
+const SETTINGS = [
+  { tag: "Shops, cafés, offices", title: "If AI already runs things where you are",
+    text: "Some teams are letting AI agents run real businesses with people around them. We're trying the same idea in a lab, with robots instead of baristas, and learning what changes when the agent has a body.",
+    ideas: [
+      "Swap failure logs: what goes wrong when an agent runs something for months?",
+      "Compare notes on AI as a manager. BOLT-7 is slow to decommission and quick to hire.",
+      "A small joint trial: our robots try to order, carry and deliver something across Stockholm.",
     ] },
-  { org: "KTH Robotics Society", url: "https://kthrobotics.com", tag: "Student robotics at KTH",
-    admire: "A new KTH society built on three pillars: build, network, compete. Members run real hardware projects: a dual-arm AI cell (ARCADE), vision-language-action models on robot arms (Parol6, XLeRobot), and an underwater vehicle that maps ghost nets on the Baltic seabed (Deeptrace).",
-    pitch: [
-      "Open build nights at our lab: bring your arms, Gearhart brings spare parts.",
-      "Our tasks with human baselines, ready for your VLA models to attempt.",
-      "Pixel would love to help with imaging and labelling for ghost-net detection.",
-      "Co-host a physical-AI hackathon in Stockholm, judged by five very fair robots.",
+  { tag: "Workshops, student teams, makerspaces", title: "If you build robots",
+    text: "Some teams are building arms, rovers and underwater vehicles and teaching them to act. We're doing the same from the other side: robots learning to work in a room they also have to run.",
+    ideas: [
+      "Open build nights at our lab: bring your robots, Gearhart brings spare parts.",
+      "Our everyday tasks with human baselines, ready for your models to attempt.",
+      "Pixel can help with cameras, imaging and labelling.",
+      "Co-host a hands-on hackathon in Stockholm, judged by five very fair robots.",
     ] },
 ];
 
@@ -105,5 +105,5 @@ const TICKER = [
   "PIXEL> lens cleaned. world looks 3% sharper.",
   "GEARHART> spare arm available for visiting researchers. please return it.",
   "MO> mopping sector 4. visitors expected soon. mopping sector 4 again.",
-  "BOLT-7> looking for collaborators in Stockholm. fika budget approved.",
+  "BOLT-7> learning to act in space. fika budget approved.",
 ];

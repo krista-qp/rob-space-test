@@ -25,7 +25,7 @@ setInterval(tickClock, 10000);
 
 for (const p of PRINCIPLES) {
   const card = el("article", "principle");
-  card.append(el("h3", null, p.title), el("p", null, p.text), el("p", "from", "Learned from " + p.from));
+  card.append(el("h3", null, p.title), el("p", null, p.text));
   $("principle-list").append(card);
 }
 
@@ -82,22 +82,15 @@ for (const entry of LOG) {
   $("log-list").append(li);
 }
 
-for (const f of FRIENDS) {
+for (const f of SETTINGS) {
   const card = el("article", "friend");
-  const name = el("a", null, f.org + " ↗");
-  name.href = f.url;
-  name.target = "_blank";
-  name.rel = "noopener";
-  const h = el("h3");
-  h.append(name);
   const ideas = el("ul", "ideas");
-  for (const idea of f.pitch) ideas.append(el("li", null, idea));
+  for (const idea of f.ideas) ideas.append(el("li", null, idea));
   card.append(
     el("p", "tag", f.tag),
-    h,
-    el("p", "label", "What we admire"),
-    el("p", null, f.admire),
-    el("p", "label", "What we'd like to try together"),
+    el("h3", null, f.title),
+    el("p", null, f.text),
+    el("p", "label", "What we could try together"),
     ideas,
   );
   $("friend-list").append(card);

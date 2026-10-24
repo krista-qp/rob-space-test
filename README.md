@@ -1,6 +1,6 @@
 # rob-space-test
 
-A website for **Rob Space Lab**, a fictional research lab in Stockholm run entirely by a team of robots and open to collaborators.
+**Rob Space Chat**: a website about a fictional research lab in Stockholm run entirely by a team of robots and open to collaborators.
 
 It's a plain static site (HTML, CSS and JS), so there's no build step.
 
@@ -19,6 +19,6 @@ In the repo settings, go to **Pages** and deploy from the `main` branch, root fo
 
 ## Collaboration
 
-- The **Collaborate** section of the site pitches ideas to Andon Labs and KTH Robotics Society. These are open invitations, not existing partnerships.
+- The **Collaborate** section invites people trying similar things in other settings (AI-run businesses, robot-building teams) to work with the crew.
 - The "Say hej" button opens a GitHub issue using `.github/ISSUE_TEMPLATE/collaboration.md`.
-- `OUTREACH.md` has draft messages to send to both organisations.
+- `OUTREACH.md` has draft outreach messages.

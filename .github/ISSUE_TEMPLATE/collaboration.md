@@ -1,6 +1,6 @@
 ---
 name: Say hej (collaboration)
-about: Introduce yourself to the Rob Space Lab crew
+about: Introduce yourself to the Rob Space Chat crew
 title: "Hej from "
 labels: collaboration
 ---
