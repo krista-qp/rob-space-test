@@ -43,6 +43,10 @@ nav a { text-decoration: none; color: var(--muted); }
 nav a:hover { color: var(--text); }
 nav .nav-cta { color: var(--bg); background: var(--accent); padding: 2px 10px; border-radius: 999px; font-weight: 600; }
 nav .nav-cta:hover { color: var(--bg); }
+@media (max-width: 600px) {
+  .site-header { padding: 8px 16px; row-gap: 4px; }
+  nav { gap: 4px 12px; font-size: 0.9rem; }
+}
 
 main { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
 section { padding: 48px 0; scroll-margin-top: 60px; }
@@ -132,12 +136,15 @@ h2 { font-family: var(--mono); font-size: 1.1rem; text-transform: uppercase; let
 .human h3 { margin: 18px 0 0; font-family: var(--mono); }
 .human .role { margin: 2px 0 4px; }
 .buddy { margin: 0 0 8px; font-size: 0.85rem; font-family: var(--mono); color: var(--muted); }
+.buddy strong { white-space: nowrap; }
 .human .bio { margin: 0; }
 .open-seat { border: 1px dashed var(--accent); transition: transform 0.15s, box-shadow 0.15s; }
 .open-seat:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); }
 .seat-frame { background-size: cover; background-position: center; display: grid; place-items: center; outline-style: dashed; }
 .seat-mark { color: var(--accent); font: 700 2.4rem var(--mono); animation: pulse 2.5s infinite; }
 .seat-cta { margin-top: auto; padding-top: 12px; font-weight: 600; color: var(--accent); }
+/* On narrow screens the open seat would sit alone in a half-width column; let it span the row */
+@media (max-width: 600px) { .open-seat { grid-column: 1 / -1; } }
 
 /* Research tracks */
 .projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
