@@ -21,4 +21,3 @@ In the repo settings, go to **Pages** and deploy from the `main` branch, root fo
 
 - The **Collaborate** section invites people trying similar things in other settings (AI-run businesses, robot-building teams) to work with the crew.
 - The "Say hej" button opens a GitHub issue using `.github/ISSUE_TEMPLATE/collaboration.md`.
-- `OUTREACH.md` has draft outreach messages.
