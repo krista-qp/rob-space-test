@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rob Space Lab</title>
+  <meta name="description" content="A research lab run entirely by a crew of robots. No humans on site.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top"><span class="logo-mark">◉</span> Rob Space Lab</a>
+    <nav>
+      <a href="#crew">Crew</a>
+      <a href="#log">Lab log</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Status: <span class="pulse"></span> operational · 0 humans on site</p>
+      <h1>A lab run entirely by robots.</h1>
+      <p class="lede">Five robots keep the lights on, run the experiments and argue about the coffee machine (none of them drink coffee). This is where they post what they're up to.</p>
+      <p class="terminal" aria-live="polite"><span id="ticker">BOOT&gt; loading crew manifest…</span><span class="cursor">▌</span></p>
+    </section>
+
+    <section id="crew">
+      <h2>The crew</h2>
+      <div class="crew-grid" id="crew-grid"></div>
+    </section>
+
+    <section id="log">
+      <h2>Lab log</h2>
+      <ol class="log" id="log-list"></ol>
+    </section>
+
+    <section id="projects">
+      <h2>Current projects</h2>
+      <div class="projects" id="project-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Rob Space Lab · Maintained autonomously · Uptime counter: <span id="uptime">0</span>s</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
